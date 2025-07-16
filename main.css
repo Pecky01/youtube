@@ -21,6 +21,11 @@ body {
     padding: 0px 20px 0 20px;
     align-items: center;
     padding: 10px;
+    padding-bottom: 41px;
+    position: fixed;
+    z-index: 1000;
+    background: rgba(212, 212, 212, 0.945);
+    width: 100%;
 }
 .menu {
     font-size: 25px;
@@ -29,9 +34,15 @@ body {
     transform: scaleY(0.90);
     color: var(--secondary-color);
 }
+.menu:hover {
+    cursor: pointer;
+}
 .brand {
     display: flex;
     align-items: center;
+}
+.brand:hover {
+    cursor:pointer;
 }
 .youtube_logo {
     color: var(--main-color);
@@ -76,6 +87,9 @@ body {
     align-items: center;
     color: lightgrey;
 }
+button {
+    border: 0px;
+}
 button:hover {
     cursor: pointer;
 }
@@ -86,4 +100,93 @@ button:hover {
     font-size: 25px;
     padding: 10px;
     margin-left: 15px;
+}
+
+
+
+
+.body {
+    display: flex;
+}
+
+
+
+
+
+.sidebar {
+    background: lightgrey;
+    width: fit-content;
+    padding: 10px;
+    height: 700px;
+    position: fixed;
+    top: 100px;
+    left: 0;
+}
+.tabs {
+    margin: 40px 0;
+}
+
+
+
+
+
+.video-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-left: 170px;
+    margin-top: 100px;
+}
+.video_holder {
+    display: flex;
+    /* border: 3px solid black; */
+    width: 23%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 10px 0;
+    align-items: center;
+}
+.video_tiles {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin: 20px 0;
+}
+.video_display {
+    background: brown;
+    height: 155px;
+    position: relative;
+}
+.timestamp {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: lightblue;
+    display: flex;
+    padding: 2px;
+    font-size: 12px;
+}
+.video_descriptions {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: flex-start;
+}
+.video-user-icon {
+    border: 2px solid black;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: rgb(116, 25, 25);
+}
+.video-time {
+    margin: 0 10px;
 }
