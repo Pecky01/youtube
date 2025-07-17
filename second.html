@@ -4,53 +4,297 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- Main stylesheet for this page -->
     <link rel="stylesheet" href="second.css">
+    <!-- Remix Icon CDN for icons -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <!-- Google Fonts preconnect and Rubik font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="vid-wall">
-        <div class="video">
-            <div class="video-display"></div>
-            <div class="video-description">
-                <div class="top-row"><h1 class="video-title">Video Title</h1></div>
-                <div class="bottom-row">
-                    <div class="bottom-left-part">
-                        <div class="user-profile-icon"><i class="ri-user-line"></i></div>
-                        <div class="user-profile-name">
-                            <h3>Uploaders Username</h3>
-                            <h4>1.43 Subscribers</h4>
-                        </div>
-                        <button class="subscribe"><h4>Subscribe</h4></button>
-                    </div>
+        <!-- Fixed header bar: contains menu, logo, search, and mic -->
+        <div class="header">
+            <!-- Menu Button (left side navigation trigger) -->
+            <i class="ri-menu-line menu"></i>
+            <!-- Brand/Logo section -->
+            <div class="brand">
+                <i class="ri-youtube-fill youtube_logo"></i>
+                <h1 class="web_name"><a href="index.html">Youtube</a></h1>
+            </div>
+            <!-- Search Bar (centered) -->
+            <div class="search_bar">
+                <input class="search_box" placeholder="Search"></input>
+                <button class="search_button"><i class="ri-search-line"></i></button>
+            </div>
+            <!-- Microphone button (right side) -->
+            <button class="mic"><i class="ri-mic-fill"></i></button>
+        </div>
 
-                    <div class="bottom-right-part">
-                        <div class="like-dislike">
-                            <button class="like"><i class="ri-thumb-up-line"></i></button>
-                            <button class="dislike"><i class="ri-thumb-down-line"></i></button>
+        <!-- Main content area: video player and recommendations -->
+        <div class="vid-wall">
+            <!-- Main video section -->
+            <div class="video">
+                <!-- Video display area (placeholder for video) -->
+                <div class="video-display"></div>
+                <!-- Video description and actions -->
+                <div class="video-description">
+                    <div class="top-row">
+                        <h1 class="video-title">Video Title</h1>
+                    </div>
+                    <div class="bottom-row">
+                        <!-- Uploader info and subscribe button -->
+                        <div class="bottom-left-part">
+                            <div class="user-profile-icon"><i class="ri-user-line"></i></div>
+                            <div class="user-profile-name">
+                                <h3>Uploaders Username</h3>
+                                <h4>1.43 Subscribers</h4>
+                            </div>
+                            <button class="subscribe"><h4>Subscribe</h4></button>
                         </div>
-                        <button class="share"><h4>Share</h4></button>
+                        <!-- Like/Dislike and Share buttons -->
+                        <div class="bottom-right-part">
+                            <div class="like-dislike">
+                                <button class="like"><i class="ri-thumb-up-line"></i></button>
+                                <button class="dislike"><i class="ri-thumb-down-line"></i></button>
+                            </div>
+                            <button class="share"><h4>Share</h4></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recommended videos and ad section (right side) -->
+            <div class="recommended-content">
+                <!-- Ad banner (placeholder) -->
+                <div class="recommended-ad"></div>
+                <!-- List of recommended videos -->
+                <div class="recommended-videos">
+                    <!-- Each .new-vid is a recommended video preview -->
+                    <div class="new-vid">
+                        <div class="vid-display"></div>
+                        <div class="vid-description">
+                            <div class="vid-title"><h3><a href="second.html">Video Title</a></h3></div>
+                            <div class="profile-name"><h5>Uploaders Username</h5></div>
+                            <div class="vid-numbers">
+                                <div class="vid-views"><h5>1.57M Views</h5></div>
+                                <div class="vid-date"><h5>2 weeks ago</h5></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="new-vid">
+                        <div class="vid-display"></div>
+                        <div class="vid-description">
+                            <div class="vid-title"><h3><a href="second.html">Video Title</a></h3></div>
+                            <div class="profile-name"><h5>Uploaders Username</h5></div>
+                            <div class="vid-numbers">
+                                <div class="vid-views"><h5>1.57M Views</h5></div>
+                                <div class="vid-date"><h5>2 weeks ago</h5></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="new-vid">
+                        <div class="vid-display"></div>
+                        <div class="vid-description">
+                            <div class="vid-title"><h3><a href="second.html">Video Title</a></h3></div>
+                            <div class="profile-name"><h5>Uploaders Username</h5></div>
+                            <div class="vid-numbers">
+                                <div class="vid-views"><h5>1.57M Views</h5></div>
+                                <div class="vid-date"><h5>2 weeks ago</h5></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="new-vid">
+                        <div class="vid-display"></div>
+                        <div class="vid-description">
+                            <div class="vid-title"><h3><a href="second.html">Video Title</a></h3></div>
+                            <div class="profile-name"><h5>Uploaders Username</h5></div>
+                            <div class="vid-numbers">
+                                <div class="vid-views"><h5>1.57M Views</h5></div>
+                                <div class="vid-date"><h5>2 weeks ago</h5></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="new-vid">
+                        <div class="vid-display"></div>
+                        <div class="vid-description">
+                            <div class="vid-title"><h3><a href="second.html">Video Title</a></h3></div>
+                            <div class="profile-name"><h5>Uploaders Username</h5></div>
+                            <div class="vid-numbers">
+                                <div class="vid-views"><h5>1.57M Views</h5></div>
+                                <div class="vid-date"><h5>2 weeks ago</h5></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="new-vid">
+                        <div class="vid-display"></div>
+                        <div class="vid-description">
+                            <div class="vid-title"><h3><a href="second.html">Video Title</a></h3></div>
+                            <div class="profile-name"><h5>Uploaders Username</h5></div>
+                            <div class="vid-numbers">
+                                <div class="vid-views"><h5>1.57M Views</h5></div>
+                                <div class="vid-date"><h5>2 weeks ago</h5></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="new-vid">
+                        <div class="vid-display"></div>
+                        <div class="vid-description">
+                            <div class="vid-title"><h3><a href="second.html">Video Title</a></h3></div>
+                            <div class="profile-name"><h5>Uploaders Username</h5></div>
+                            <div class="vid-numbers">
+                                <div class="vid-views"><h5>1.57M Views</h5></div>
+                                <div class="vid-date"><h5>2 weeks ago</h5></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="new-vid">
+                        <div class="vid-display"></div>
+                        <div class="vid-description">
+                            <div class="vid-title"><h3><a href="second.html">Video Title</a></h3></div>
+                            <div class="profile-name"><h5>Uploaders Username</h5></div>
+                            <div class="vid-numbers">
+                                <div class="vid-views"><h5>1.57M Views</h5></div>
+                                <div class="vid-date"><h5>2 weeks ago</h5></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="new-vid">
+                        <div class="vid-display"></div>
+                        <div class="vid-description">
+                            <div class="vid-title"><h3><a href="second.html">Video Title</a></h3></div>
+                            <div class="profile-name"><h5>Uploaders Username</h5></div>
+                            <div class="vid-numbers">
+                                <div class="vid-views"><h5>1.57M Views</h5></div>
+                                <div class="vid-date"><h5>2 weeks ago</h5></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="new-vid">
+                        <div class="vid-display"></div>
+                        <div class="vid-description">
+                            <div class="vid-title"><h3><a href="second.html">Video Title</a></h3></div>
+                            <div class="profile-name"><h5>Uploaders Username</h5></div>
+                            <div class="vid-numbers">
+                                <div class="vid-views"><h5>1.57M Views</h5></div>
+                                <div class="vid-date"><h5>2 weeks ago</h5></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="new-vid">
+                        <div class="vid-display"></div>
+                        <div class="vid-description">
+                            <div class="vid-title"><h3><a href="second.html">Video Title</a></h3></div>
+                            <div class="profile-name"><h5>Uploaders Username</h5></div>
+                            <div class="vid-numbers">
+                                <div class="vid-views"><h5>1.57M Views</h5></div>
+                                <div class="vid-date"><h5>2 weeks ago</h5></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="new-vid">
+                        <div class="vid-display"></div>
+                        <div class="vid-description">
+                            <div class="vid-title"><h3><a href="second.html">Video Title</a></h3></div>
+                            <div class="profile-name"><h5>Uploaders Username</h5></div>
+                            <div class="vid-numbers">
+                                <div class="vid-views"><h5>1.57M Views</h5></div>
+                                <div class="vid-date"><h5>2 weeks ago</h5></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="new-vid">
+                        <div class="vid-display"></div>
+                        <div class="vid-description">
+                            <div class="vid-title"><h3><a href="second.html">Video Title</a></h3></div>
+                            <div class="profile-name"><h5>Uploaders Username</h5></div>
+                            <div class="vid-numbers">
+                                <div class="vid-views"><h5>1.57M Views</h5></div>
+                                <div class="vid-date"><h5>2 weeks ago</h5></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="new-vid">
+                        <div class="vid-display"></div>
+                        <div class="vid-description">
+                            <div class="vid-title"><h3><a href="second.html">Video Title</a></h3></div>
+                            <div class="profile-name"><h5>Uploaders Username</h5></div>
+                            <div class="vid-numbers">
+                                <div class="vid-views"><h5>1.57M Views</h5></div>
+                                <div class="vid-date"><h5>2 weeks ago</h5></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="new-vid">
+                        <div class="vid-display"></div>
+                        <div class="vid-description">
+                            <div class="vid-title"><h3><a href="second.html">Video Title</a></h3></div>
+                            <div class="profile-name"><h5>Uploaders Username</h5></div>
+                            <div class="vid-numbers">
+                                <div class="vid-views"><h5>1.57M Views</h5></div>
+                                <div class="vid-date"><h5>2 weeks ago</h5></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="new-vid">
+                        <div class="vid-display"></div>
+                        <div class="vid-description">
+                            <div class="vid-title"><h3><a href="second.html">Video Title</a></h3></div>
+                            <div class="profile-name"><h5>Uploaders Username</h5></div>
+                            <div class="vid-numbers">
+                                <div class="vid-views"><h5>1.57M Views</h5></div>
+                                <div class="vid-date"><h5>2 weeks ago</h5></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="new-vid">
+                        <div class="vid-display"></div>
+                        <div class="vid-description">
+                            <div class="vid-title"><h3><a href="second.html">Video Title</a></h3></div>
+                            <div class="profile-name"><h5>Uploaders Username</h5></div>
+                            <div class="vid-numbers">
+                                <div class="vid-views"><h5>1.57M Views</h5></div>
+                                <div class="vid-date"><h5>2 weeks ago</h5></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="new-vid">
+                        <div class="vid-display"></div>
+                        <div class="vid-description">
+                            <div class="vid-title"><h3><a href="second.html">Video Title</a></h3></div>
+                            <div class="profile-name"><h5>Uploaders Username</h5></div>
+                            <div class="vid-numbers">
+                                <div class="vid-views"><h5>1.57M Views</h5></div>
+                                <div class="vid-date"><h5>2 weeks ago</h5></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="new-vid">
+                        <div class="vid-display"></div>
+                        <div class="vid-description">
+                            <div class="vid-title"><h3><a href="second.html">Video Title</a></h3></div>
+                            <div class="profile-name"><h5>Uploaders Username</h5></div>
+                            <div class="vid-numbers">
+                                <div class="vid-views"><h5>1.57M Views</h5></div>
+                                <div class="vid-date"><h5>2 weeks ago</h5></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="new-vid">
+                        <div class="vid-display"></div>
+                        <div class="vid-description">
+                            <div class="vid-title"><h3><a href="second.html">Video Title</a></h3></div>
+                            <div class="profile-name"><h5>Uploaders Username</h5></div>
+                            <div class="vid-numbers">
+                                <div class="vid-views"><h5>1.57M Views</h5></div>
+                                <div class="vid-date"><h5>2 weeks ago</h5></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-
-        <div class="recommended-content">
-            <div class="recommended-ad"></div>
-            <div class="recommended-videos">
-                <div class="new-vid">
-                    <div class="vid-display"></div>
-                    <div class="vid-description">
-                        <div class="vid-title"><h3>Video Title</h3></div>
-                        <div class="profile-name"><h4>Uploaders Username</h4></div>
-                        <div class="vid-views"></div>
-                        <div class="vid-date"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+        <!-- End of main content -->
 </body>
 </html>
