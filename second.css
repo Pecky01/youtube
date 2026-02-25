@@ -11,6 +11,7 @@
     --secondary-color: black;
     --tertiary-color: white;
     --background-color: white;
+    --hover-color: lightgrey;
 }
 
 body {
@@ -105,6 +106,10 @@ button {
 }
 button:hover {
     cursor: pointer;
+    transform: scale(1.05);
+}
+.bottom-row button:hover {
+    background-color: var(--hover-color);
 }
 
 /* ========== MAIN CONTENT LAYOUT ========== */
